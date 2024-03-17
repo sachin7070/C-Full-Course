@@ -98,5 +98,215 @@ Output:
 Integer: 10
 Float: 3.14
 Character: A
-*/Boolean: 1
+Boolean: 1
+*/
+```
+
+## 4 control Structures
+Control flow refers to the order in which statements are executed in a program. In C++, various control structures allow you to control the flow of execution based on conditions and loops.
+
+### 1. If-Else Statements
+The if-else statement allows you to execute different blocks of code based on conditions.
+
+Syntax:
+```cpp
+if (condition) {
+    // code block to execute if condition is true
+} else {
+    // code block to execute if condition is false
+}
+```
+Example:
+```cpp
+
+#include <iostream>
+
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        std::cout << "Positive" << std::endl;
+    } else {
+        std::cout << "Non-positive" << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### 2. Switch Statement
+The switch statement allows you to select one of many code blocks to be executed.
+
+Syntax:
+```cpp
+switch (expression) {
+    case value1:
+        // code block
+        break;
+    case value2:
+        // code block
+        break;
+    default:
+        // default code block
+}
+```
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    char grade = 'B';
+
+    switch (grade) {
+        case 'A':
+            std::cout << "Excellent" << std::endl;
+            break;
+        case 'B':
+            std::cout << "Good" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid grade" << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### 3. Loops
+
+### a. For Loop
+The for loop is used to execute a block of code a specified number of times.
+
+Syntax:
+```cpp
+
+for (initialization; condition; increment/decrement) {
+    // code block to execute
+}
+```
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    for (int i = 0; i < 5; ++i) {
+        std::cout << "Iteration " << i + 1 << std::endl;
+    }
+
+    return 0;
+}
+```
+### b. While Loop
+The while loop is used to execute a block of code as long as a specified condition is true.
+
+Syntax:
+```cpp
+while (condition) {
+    // code block to execute
+}
+```
+
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    int i = 0;
+
+    while (i < 5) {
+        std::cout << "Iteration " << i + 1 << std::endl;
+        ++i;
+    }
+
+    return 0;
+}
+```
+### c. Do-While Loop
+The do-while loop is similar to the while loop, but it executes the code block once before checking the condition.
+
+Syntax:
+```cpp
+do {
+    // code block to execute
+} while (condition);
+```
+
+Example:
+```cpp
+
+#include <iostream>
+
+int main() {
+    int i = 0;
+
+    do {
+        std::cout << "Iteration " << i + 1 << std::endl;
+        ++i;
+    } while (i < 5);
+
+    return 0;
+}
+```
+### 4. Branching Statements
+### a. Break Statement
+The break statement is used to exit a loop or switch statement.
+
+Example:
+```cpp
+
+#include <iostream>
+
+int main() {
+    for (int i = 0; i < 5; ++i) {
+        if (i == 3) {
+            break;
+        }
+        std::cout << "Iteration " << i + 1 << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### b. Continue Statement
+The continue statement is used to skip the rest of the loop's code block and continue with the next iteration.
+
+Example:
+```cpp
+
+#include <iostream>
+
+int main() {
+    for (int i = 0; i < 5; ++i) {
+        if (i == 2) {
+            continue;
+        }
+        std::cout << "Iteration " << i + 1 << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### c. Goto Statement
+The goto statement is used to transfer control to another part of the program.
+
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    int i = 0;
+
+    loop:
+    std::cout << "Iteration " << i + 1 << std::endl;
+    ++i;
+    if (i < 5) {
+        goto loop;
+    }
+
+    return 0;
+}
+```
+
 
