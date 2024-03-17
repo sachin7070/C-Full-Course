@@ -21,7 +21,7 @@ Welcome to the comprehensive C++ course! In this course, you will learn everythi
 ---
 
 
-##  1. Introduction to C++
+## 1. Introduction to C++
 
 C++ is a powerful and widely used programming language known for its efficiency and versatility. Developed by Bjarne Stroustrup as an extension of the C programming language, C++ supports both procedural and object-oriented programming paradigms and is used extensively in various domains such as systems programming, game development, and high-performance applications.
 
