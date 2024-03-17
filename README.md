@@ -93,9 +93,10 @@ int main() {
 
     return 0;
 }
-//Output:
-//Integer: 10
-//Float: 3.14
-//Character: A
-//Boolean: 1
+/*
+Output:
+Integer: 10
+Float: 3.14
+Character: A
+*/Boolean: 1
 
