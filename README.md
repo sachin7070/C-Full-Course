@@ -20,9 +20,9 @@ Welcome to the comprehensive C++ course! In this course, you will learn everythi
 
 ---
 
-## 1. Introduction to C++
 
-### Explanation:
+##  1. Introduction to C++
+
 C++ is a powerful and widely used programming language known for its efficiency and versatility. Developed by Bjarne Stroustrup as an extension of the C programming language, C++ supports both procedural and object-oriented programming paradigms and is used extensively in various domains such as systems programming, game development, and high-performance applications.
 
 ### Example:
@@ -69,9 +69,11 @@ int main() {
 ## 3. Data Types
 
 Data types in C++ specify the type of data that a variable can hold. C++ supports various data types such as:
-Primitive Data Types: 'Integers', 'Floating-point numbers', 'Characters', 'Booleans'
-Derived Data Types: Arrays, Pointers, References
-User-defined Data Types: Structures, Classes, Enums
+
+### Primitive Data Types: Integers, Floating-point numbers, Characters, Booleans
+### Derived Data Types: Arrays, Pointers, References
+### User-defined Data Types: Structures, Classes, Enums
+
 Understanding data types is crucial for defining variables and manipulating data effectively.
 
 Example:
