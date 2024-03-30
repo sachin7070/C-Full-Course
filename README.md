@@ -359,5 +359,330 @@ Recursive functions are functions that call themselves. They are useful for solv
 
 Functions play a crucial role in C++ programming, offering modularity and flexibility. Understanding how to define, declare, and use functions is essential for writing efficient and maintainable code.
 
+## 6. Arrays and Strings
 
+Arrays and strings are fundamental data structures in C++. Understanding how to work with arrays and strings is essential for developing a wide range of applications.
 
+### Arrays
+
+An array is a collection of elements of the same data type stored in contiguous memory locations. It allows you to store multiple values under a single name and access them using an index.
+
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    // Accessing elements of the array
+    for (int i = 0; i < 5; ++i) {
+        std::cout << "Element " << i << ": " << arr[i] << std::endl;
+    }
+
+    return 0;
+}
+```
+### Strings
+A string in C++ is a sequence of characters stored in contiguous memory locations. It is represented using the std::string class from the Standard Template Library (STL).
+
+Example:
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "Hello, World!";
+
+    // Accessing characters of the string
+    for (char c : str) {
+        std::cout << c;
+    }
+
+    return 0;
+}
+```
+### 7. Pointers
+Pointers are variables that store memory addresses. They allow you to indirectly access memory locations and manipulate data efficiently.
+
+Example:
+```cpp
+#include <iostream>
+
+int main() {
+    int num = 10;
+    int* ptr = &num;
+
+    std::cout << "Value of num: " << num << std::endl;
+    std::cout << "Address of num: " << &num << std::endl;
+    std::cout << "Value of ptr: " << ptr << std::endl;
+    std::cout << "Value pointed by ptr: " << *ptr << std::endl;
+
+    return 0;
+}
+```
+
+### 8. Classes and Objects
+Classes and objects are fundamental concepts in object-oriented programming (OOP). They allow you to model real-world entities and encapsulate data and behavior within a single unit.
+
+Example:
+```cpp
+#include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+
+public:
+    // Constructor
+    Student(std::string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Member function
+    void display() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of the Student class
+    Student s("John", 20);
+
+    // Accessing member function
+    s.display();
+
+    return 0;
+}
+```
+
+### 9. Inheritance
+Inheritance is a mechanism in C++ that allows a class to inherit properties and behavior from another class. It promotes code reusability and supports the concept of hierarchical relationships.
+
+Example:
+```cpp
+#include <iostream>
+#include <string>
+
+// Base class
+class Person {
+protected:
+    std::string name;
+    int age;
+
+public:
+    Person(std::string n, int a) : name(n), age(a) {}
+
+    void display() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+    }
+};
+
+// Derived class
+class Student : public Person {
+private:
+    int rollNumber;
+
+public:
+    Student(std::string n, int a, int r) : Person(n, a), rollNumber(r) {}
+
+    void displayRollNumber() {
+        std::cout << "Roll Number: " << rollNumber << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of the Student class
+    Student s("John", 20, 101);
+
+    // Accessing member functions
+    s.display();
+    s.displayRollNumber();
+
+    return 0;
+}
+```
+
+### 10. Polymorphism
+Polymorphism is a key concept in OOP that allows objects of different classes to be treated as objects of a common superclass. It enables dynamic binding and method overriding.
+
+Example:
+
+```cpp
+#include <iostream>
+#include <string>
+
+// Base class
+class Shape {
+public:
+    virtual void draw() {
+        std::cout << "Drawing a shape" << std::endl;
+    }
+};
+
+// Derived class
+class Circle : public Shape {
+public:
+    void draw() override {
+        std::cout << "Drawing a circle" << std::endl;
+    }
+};
+
+int main() {
+    // Creating objects of different classes
+    Shape* s1 = new Shape();
+    Shape* s2 = new Circle();
+
+    // Calling the draw method
+    s1->draw();
+    s2->draw();
+
+    return 0;
+}
+```
+
+### 11. File Handling
+File handling in C++ allows you to perform various operations such as reading from and writing to files. It provides classes and functions for working with files efficiently.
+
+Example:
+```cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    std::ofstream file("example.txt");
+
+    if (file.is_open()) {
+        file << "Hello, World!";
+        file.close();
+        std::cout << "File written successfully." << std::endl;
+    } else {
+        std::cerr << "Unable to open file." << std::endl;
+    }
+
+    return 0;
+}
+```
+### 12. Templates
+Templates in C++ allow you to create generic functions and classes that can work with any data type. They promote code reuse and support type-safe programming.
+
+Example:
+```cpp
+#include <iostream>
+
+// Template function
+template<typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    // Calling the template function with different data types
+    std::cout << "Sum of integers: " << add(5, 3) << std::endl;
+    std::cout << "Sum of floats: " << add(3.5, 2.7) << std::endl;
+
+    return 0;
+}
+```
+
+### 13. Standard Template Library (STL)
+The Standard Template Library (STL) is a powerful library in C++ that provides various data structures and algorithms. It includes containers such as vectors, lists, maps, and algorithms such as sorting and searching.
+
+Example:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> numbers = {5, 2, 8, 1, 6};
+
+    // Sorting the vector
+    std::sort(numbers.begin(), numbers.end());
+
+    // Displaying the sorted vector
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+### 11. File Handling
+File handling in C++ allows you to perform various operations such as reading from and writing to files. It provides classes and functions for working with files efficiently.
+
+Example:
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    std::ofstream file("example.txt");
+
+    if (file.is_open()) {
+        file << "Hello, World!";
+        file.close();
+        std::cout << "File written successfully." << std::endl;
+    } else {
+        std::cerr << "Unable to open file." << std::endl;
+    }
+
+    return 0;
+}
+```
+### 12. Templates
+Templates in C++ allow you to create generic functions and classes that can work with any data type. They promote code reuse and support type-safe programming.
+
+Example:
+```cpp
+#include <iostream>
+
+// Template function
+template<typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    // Calling the template function with different data types
+    std::cout << "Sum of integers: " << add(5, 3) << std::endl;
+    std::cout << "Sum of floats: " << add(3.5, 2.7) << std::endl;
+
+    return 0;
+}
+```
+
+### 13. Standard Template Library (STL)
+The Standard Template Library (STL) is a powerful library in C++ that provides various data structures and algorithms. It includes containers such as vectors, lists, maps, and algorithms such as sorting and searching.
+
+Example:
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> numbers = {5, 2, 8, 1, 6};
+
+    // Sorting the vector
+    std::sort(numbers.begin(), numbers.end());
+
+    // Displaying the sorted vector
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
