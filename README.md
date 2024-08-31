@@ -3,8 +3,8 @@
 Welcome to the comprehensive C++ course! In this course, you will learn everything you need to know about the C++ programming language, from the basics to advanced topics. Each section includes detailed explanations, examples, and outputs to help you understand and practice C++ programming effectively.
 
 ## Features of C++
-![Features of C++](![F9E9CD67-0144-41FD-856F-7B62E628E5C3_1_201_a](https://github.com/user-attachments/assets/a4c69994-e887-4ffe-b64e-78e3564bfb3f)
-)
+![F9E9CD67-0144-41FD-856F-7B62E628E5C3_1_201_a](https://github.com/user-attachments/assets/f95027ae-ada5-4cdb-9d6c-a903528de348)
+
 
 ## Table of Contents
 
