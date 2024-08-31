@@ -84,19 +84,19 @@ Comments in C++ are used to explain code and make it more readable. They can als
 
 Single-line comments start with two forward slashes (`//`). Any text between `//` and the end of the line is ignored by the compiler.
 
-**Example 1: Comment before a line of code**
+Example 1: Comment before a line of code**
 
 ```cpp
 // This is a comment
 cout << "Hello World!";
 ```
-**Example 2: Comment at the end of a line of code
+Example 2: Comment at the end of a line of code
 
 ```cpp
 Copy code
 cout << "Hello World!"; // This is a comment
 ```
-**Example 3: Multi-line Comments
+Example 3: Multi-line Comments
 Multi-line comments start with` /*`and end with` */`. Any text between `/*` and `*/`is ignored by the compiler.
 ```cpp
 Copy code
@@ -109,9 +109,12 @@ cout << "Hello World!";
 
 Data types in C++ specify the type of data that a variable can hold. C++ supports various data types such as:
 
-### Primitive Data Types: Integers, Floating-point numbers, Characters, Booleans
-### Derived Data Types: Arrays, Pointers, References
-### User-defined Data Types: Structures, Classes, Enums
+### Primitive Data Types: 
+Integers, Floating-point numbers, Characters, Booleans
+### Derived Data Types:
+Arrays, Pointers, References
+### User-defined Data Types: 
+Structures, Classes, Enums
 
 Understanding data types is crucial for defining variables and manipulating data effectively.
 
@@ -139,6 +142,7 @@ Float: 3.14
 Character: A
 Boolean: 1
 */
+```
 ```plaintext
 The data type specifies the size and type of information the variable will store:
 |-----------|--------------|---------------------------------------------------------------|
