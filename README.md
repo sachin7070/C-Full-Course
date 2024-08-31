@@ -139,7 +139,7 @@ Float: 3.14
 Character: A
 Boolean: 1
 */
-```
+```plaintext
 The data type specifies the size and type of information the variable will store:
 |-----------|--------------|---------------------------------------------------------------|
 | Data Type | Size         | Description                                                   |
@@ -150,6 +150,7 @@ The data type specifies the size and type of information the variable will store
 | float     | 4 bytes      | Stores fractional numbers, containing 6-7 decimal digits      |
 | double    | 8 bytes      | Stores fractional numbers, containing 15 decimal digits       |
 |-----------|--------------|---------------------------------------------------------------|
+```
 
 
 ## 4 control Structures
@@ -166,6 +167,7 @@ if (condition) {
     // code block to execute if condition is false
 }
 ```
+
 ```plaintext
   +----------------+
   |   Start        |
@@ -175,10 +177,10 @@ if (condition) {
   +----------------+
   | Condition ?    |
   +----------------+
-     /       \
-   Yes        No
-   /            \
-  v              v
+     /           \
+   Yes            No
+   /                 \
+  v                   v
 +----------------+    +----------------+
 | Execute Block  |    | Execute Else   |
 | of Code        |    | Block of Code  |
@@ -189,6 +191,7 @@ if (condition) {
   |    End         |    |    End         |
   +----------------+    +----------------+
 ```
+
 Example:
 ```cpp
 
